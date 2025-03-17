@@ -13,7 +13,7 @@ function App() {
                               <img src="./home.png"></img>
                         </Link>
                   </div>
-                  <nav className="flex justify-around align-top w-full p-5 pt-7">
+                  <nav className="flex justify-around align-top w-full p-5 pt-7 border-b-2 border-indigo-900">
                         <Link to="/about" className="linkBtn">
                               <img src="./bioSmall.png"></img>
                         </Link>
