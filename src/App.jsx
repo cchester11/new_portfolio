@@ -1,8 +1,11 @@
 import { useState } from "react";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
       return (
-            <nav className="flex justify-around align-top w-full p-5 pt-7">
+        <div className="h-screen w-screen">
+          <nav className="flex justify-around align-top w-full p-5 pt-7">
                   <button type="button">
                         <a href="" target="_blank">
                               <img src="./bioSmall.png"></img>
@@ -24,6 +27,9 @@ function App() {
                         </a>
                   </button>
             </nav>
+            <Projects />
+            <Footer />
+        </div>
       );
 }
 
