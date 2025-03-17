@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import projects from "../data";
 
 function Projects() {
@@ -6,7 +6,9 @@ function Projects() {
             <div className="flex flex-wrap p-20 gap-10 flex-col justify-center">
                   {projects.map((element) => (
                         <div key={element.id} className="p-4 border rounded-lg">
-                              <h2 className="text-lg text-cyan-50 font-semibold mt-2">
+                              <h2
+                                    className="text-lg text-cyan-50 mt-2"
+                              >
                                     {element.name}
                               </h2>
                               <br></br>
