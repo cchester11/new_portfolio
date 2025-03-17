@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
       return (
-            <footer className="w-full h-25">
+            <footer className="w-full h-50">
                   {/* Empty footer for spacing */}
             </footer>
       );

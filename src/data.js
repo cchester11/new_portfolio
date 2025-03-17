@@ -20,8 +20,18 @@ const projects = [
             name: "phopApp",
             screenshot: "phopApp",
             link: "https://github.com/cchester11/phop_frontend"
-      },
+      }
+]
 
+export const posts = [
+      {
+            id: "1",
+            title: "async await"
+      },
+      {
+            id: "2",
+            title: "building my usage monitor"
+      }
 ]
 
 export default projects;

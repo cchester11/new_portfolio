@@ -37,13 +37,14 @@ function App() {
                               </a>
                         </button>
                   </nav>
-                  <Footer />
 
                   <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/posts" element={<Posts />} />
                   </Routes>
+
+                  <Footer />
             </div>
       );
 }
