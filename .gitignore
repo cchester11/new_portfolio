@@ -30,3 +30,6 @@ env
 # virtual environments
 .venv
 venv
+
+# notes and to-do
+notes.txt
