@@ -4,14 +4,12 @@ import { post_details } from "../data";
 
 function RenderPost() {
       let params = useParams();
-      const [post, setPost] = useState(null);
       const [contents, setContents] = useState([]);
 
       // algorithm to find correct post
       useEffect(() => {
             for (let i = 0; i < post_details.length; i++) {
                   if (post_details[i].id === params.id) {
-                        setPost(post_details[i].id);
                         setContents([...post_details[i].content])
                   }
             }
