@@ -24,11 +24,20 @@ function RenderPost() {
                                     return (
                                           <h2
                                                 key={index}
-                                                className="flex justify-center border-b-1 border-b-cyan-50"
+                                                className="flex justify-center border-b-1 border-b-cyan-50 pb-4"
                                           >
                                                 {item.content}
                                           </h2>
                                     );
+                              case "h3":
+                                    return (
+                                          <h3 
+                                                key={index}
+                                                className="flex justify-center pb-4"
+                                          >
+                                                {item.content}
+                                          </h3>
+                                    )
                               case "p":
                                     return <p key={index}>{item.content}</p>;
                               default:

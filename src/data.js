@@ -56,6 +56,34 @@ export const post_details = [
                   {
                         type: "h2",
                         content: "Building My Usage Monitor"
+                  },
+                  {
+                        type: "p",
+                        content: "Usage Monitor was a fun project that I could benefit from in my everyday development experience. It was one of my first experiences with Electron,which I find to be a fun framework to work with."
+                  },
+                  {
+                        type: "p",
+                        content: "I chose to use Electron for this project so that I could create and launch my own desktop application. The idea of creating my own desktop application seemed like a quintessential task I needed to check off on my developer experience."
+                  },
+                  {
+                        type: "p",
+                        content: "Electron makes use of a preload.js file which can be used to store functions or data in an object. The preload file is very powerful in that it can be accessed easily across other files. In general, I found Electron to be well designed and approached in a modular way."
+                  },
+                  {
+                        type: "h3",
+                        content: "Using Python"
+                  },
+                  {
+                        type: "p",
+                        content: "Using python in this project felt very fulfilling. Up until this time, I was not used to using multiple programming languages in a project (unless we consider using html and css with js). In order to successfully use psutil, a very easy to use library that can read your system's cpu usage, battery percentage, etc, I needed to simply create a virtual environment in my projects root directory."
+                  },
+                  {
+                        type: "p",
+                        content: "From there, using Nodes native spawn method allowed me to create a shell that could run python in the background. I needed to use python because I couldn't really find a js alternative to psutil. Psutil was just too powerful, cross-platform compatible, and easy to use"
+                  },
+                  {
+                        type: "p",
+                        content: "In the end, this project helped me learn and grow as a developer. To top it off, I get to enjoy using my own application through out my work day."
                   }
             ]
       }
