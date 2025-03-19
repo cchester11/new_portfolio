@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -7,11 +8,17 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 
 function App() {
+      // variable: hoveredButton state; default value is null
+      const [hoveredButton, setHoveredButton] = useState(null);
+
       return (
             // use onMouseEnter and onMouseLeave to change that state of hoveredButton
             // use shorthand if statements to determine the content of the Link and button elements
             <div className="h-screen w-screen">
-                  <Navbar />
+                  <Navbar
+                        hoveredButton={hoveredButton}
+                        setHoveredButton={setHoveredButton}
+                  />
 
                   <Routes>
                         <Route path="/" element={<Home />} />

@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-export default function Navbar() {
-      // variable: hoveredButton state; default value is null
-      const [hoveredButton, setHoveredButton] = useState(null);
-
+export default function Navbar({ hoveredButton, setHoveredButton }) {
       return (
             <div>
                   <div className="container flex justify-start align-middle p-7">
