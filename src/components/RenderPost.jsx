@@ -22,7 +22,7 @@ function RenderPost() {
                               case "h2":
                                     return <h2 
                                                 key={index} 
-                                                className="flex justify-center"
+                                                className="flex justify-center border-b-1 border-b-cyan-50"
                                           >
                                                 {item.content}
                                           </h2>;
