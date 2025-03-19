@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import About from "./components/About";
 import Posts from "./components/Posts";
+import RenderPost from "./components/RenderPost";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 
@@ -97,6 +98,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/posts" element={<Posts />} />
+                        <Route path="/posts/:id" element={<RenderPost />} />
                   </Routes>
 
                   <Footer />
