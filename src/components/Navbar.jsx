@@ -9,7 +9,10 @@ export default function Navbar() {
             <div>
                   <div className="container flex justify-start align-middle p-7">
                         <Link to="/" className="linkBtn">
-                              <img src="./home.png"></img>
+                              <img 
+                                    src="./home.png" 
+                                    alt="Home"
+                              ></img>
                         </Link>
                   </div>
                   <nav className="flex justify-around align-top w-full p-5 pt-7 border-b-2 border-indigo-900">
@@ -24,7 +27,10 @@ export default function Navbar() {
                                           About
                                     </span>
                               ) : (
-                                    <img src="./bioSmall.png"></img>
+                                    <img 
+                                          src="./bioSmall.png" 
+                                          alt="About"
+                                    ></img>
                               )}
                         </Link>
                         <Link
@@ -40,7 +46,7 @@ export default function Navbar() {
                               ) : (
                                     <img
                                           src="./articleSmall.png"
-                                          alt="About"
+                                          alt="Posts"
                                     ></img>
                               )}
                         </Link>
@@ -59,7 +65,10 @@ export default function Navbar() {
                                                 Github
                                           </span>
                                     ) : (
-                                          <img src="./githubSmall.png"></img>
+                                          <img 
+                                                src="./githubSmall.png" 
+                                                alt="Github"
+                                          ></img>
                                     )}
                               </a>
                         </button>
@@ -78,7 +87,10 @@ export default function Navbar() {
                                                 Linkedin
                                           </span>
                                     ) : (
-                                          <img src="./linkedinSmall.png"></img>
+                                          <img 
+                                                src="./linkedinSmall.png" 
+                                                alt="LinkedIn"
+                                          ></img>
                                     )}
                               </a>
                         </button>

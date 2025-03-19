@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { post_details } from "../data";
 
@@ -7,7 +7,7 @@ function RenderPost() {
       const [contents, setContents] = useState([]);
 
       // algorithm to find correct post
-      useEffect(() => {
+      useMemo(() => {
             for (let i = 0; i < post_details.length; i++) {
                   if (post_details[i].id === params.id) {
                         setContents([...post_details[i].content])
