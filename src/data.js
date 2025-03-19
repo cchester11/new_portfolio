@@ -43,6 +43,10 @@ export const post_details = [
                   {
                         type: "h2",
                         content: "Why So Many Semi Colons?"
+                  },
+                  {
+                        type: "p",
+                        content: "Semi colon's are often used absent-mindedly as we write our various files."
                   }
             ]
       },
