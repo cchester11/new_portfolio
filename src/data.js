@@ -26,7 +26,7 @@ const projects = [
 export const posts = [
       {
             id: "1",
-            title: "why so many semi colons?"
+            title: "The Smallest of Mistakes"
       },
       {
             id: "2",
@@ -42,11 +42,31 @@ export const post_details = [
                   // each content array contains nested objects which contain an element type (like h2) and content
                   {
                         type: "h2",
-                        content: "Why So Many Semi Colons?"
+                        content: "The Smallest of Mistakes"
                   },
                   {
                         type: "p",
-                        content: "Semi colon's are often used absent-mindedly as we write our various files."
+                        content: "Sometimes we can spend hours working out a problem, pondering several possible bugs, only to find an answer to our problem that seems so prosaic we feel as if we've just lost so much time for nothing."
+                  },
+                  {
+                        type: "p",
+                        content: "But that's not always the case. Often, even when the fix to our problem ends up being the most mundane of fixes, something we should've seen from the beginning, we learn about the software we use along the way--attempting to solve all the possible issues until we finally get to the prosiac cause of the problem."
+                  },
+                  {
+                        type: "h3",
+                        content: "Using / opposed to ./ to reference Public"
+                  },
+                  {
+                        type: "p",
+                        content: "Thats right. I just needed to delete a period in my src value's which referenced img's in my public folder. I tried commenting out Strict Mode in my main file. I tried placing my Navbar state at the top of my component tree. I tried using useMemo--yes! useMemo--instead of useEffect. I did everything, until I finally deleted those stupid periods."
+                  },
+                  {
+                        type: "p",
+                        content: "In the end, I learned about best practices, I learned about good ole useMemo, and I learned how to properly reference the public folder so that I never have to waste an evening again!"
+                  },
+                  {
+                        type: "p",
+                        content: "I didn't waste any time though because theres always something to learn."
                   }
             ]
       },
