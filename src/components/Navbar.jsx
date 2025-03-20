@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar({ hoveredButton, setHoveredButton }) {
-      console.log("Navbar mounted");
+      
       return (
             <div>
                   <div className="container flex justify-start align-middle p-7">
