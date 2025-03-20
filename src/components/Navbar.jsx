@@ -1,15 +1,26 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar({ hoveredButton, setHoveredButton }) {
-      console.log('Navbar mounted')
+      console.log("Navbar mounted");
       return (
             <div>
                   <div className="container flex justify-start align-middle p-7">
-                        <Link to="/" className="linkBtn">
-                              <img 
-                                    src="/home.png" 
-                                    alt="Home"
-                              ></img>
+                        <Link
+                              to="/"
+                              className="linkBtn transition-all duration-300 relative w-24 h-12 flex items-center justify-center"
+                              onMouseEnter={() => setHoveredButton("home")}
+                              onMouseLeave={() => setHoveredButton(null)}
+                        >
+                              {hoveredButton === "home" ? (
+                                    <span className="text-cyan-50 flex justify-center align-middle">
+                                          Home
+                                    </span>
+                              ) : (
+                                    <img 
+                                          src="/home.png" 
+                                          alt="Home"
+                                    ></img>
+                              )}
                         </Link>
                   </div>
                   <nav className="flex justify-around align-top w-full p-5 pt-7 border-b-2 border-indigo-900">
@@ -24,10 +35,7 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                           About
                                     </span>
                               ) : (
-                                    <img 
-                                          src="/bioSmall.png" 
-                                          alt="About"
-                                    ></img>
+                                    <img src="/bioSmall.png" alt="About"></img>
                               )}
                         </Link>
                         <Link
@@ -62,8 +70,8 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                                 Github
                                           </span>
                                     ) : (
-                                          <img 
-                                                src="/githubSmall.png" 
+                                          <img
+                                                src="/githubSmall.png"
                                                 alt="Github"
                                           ></img>
                                     )}
@@ -84,8 +92,8 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                                 Linkedin
                                           </span>
                                     ) : (
-                                          <img 
-                                                src="/linkedinSmall.png" 
+                                          <img
+                                                src="/linkedinSmall.png"
                                                 alt="LinkedIn"
                                           ></img>
                                     )}
