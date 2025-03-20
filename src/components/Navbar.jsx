@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar({ hoveredButton, setHoveredButton }) {
+      console.log('Navbar mounted')
       return (
             <div>
                   <div className="container flex justify-start align-middle p-7">
                         <Link to="/" className="linkBtn">
                               <img 
-                                    src="./home.png" 
+                                    src="/home.png" 
                                     alt="Home"
                               ></img>
                         </Link>
@@ -24,7 +25,7 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                     </span>
                               ) : (
                                     <img 
-                                          src="./bioSmall.png" 
+                                          src="/bioSmall.png" 
                                           alt="About"
                                     ></img>
                               )}
@@ -41,7 +42,7 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                     </span>
                               ) : (
                                     <img
-                                          src="./articleSmall.png"
+                                          src="/articleSmall.png"
                                           alt="Posts"
                                     ></img>
                               )}
@@ -62,7 +63,7 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                           </span>
                                     ) : (
                                           <img 
-                                                src="./githubSmall.png" 
+                                                src="/githubSmall.png" 
                                                 alt="Github"
                                           ></img>
                                     )}
@@ -84,7 +85,7 @@ export default function Navbar({ hoveredButton, setHoveredButton }) {
                                           </span>
                                     ) : (
                                           <img 
-                                                src="./linkedinSmall.png" 
+                                                src="/linkedinSmall.png" 
                                                 alt="LinkedIn"
                                           ></img>
                                     )}
