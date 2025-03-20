@@ -54,7 +54,7 @@ export const post_details = [
                   },
                   {
                         type: "h3",
-                        content: "Using / opposed to ./ to reference Public"
+                        content: "Using / as opposed to ./ to reference Public"
                   },
                   {
                         type: "p",

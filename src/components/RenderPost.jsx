@@ -33,13 +33,13 @@ function RenderPost() {
                                     return (
                                           <h3 
                                                 key={index}
-                                                className="flex justify-center pb-4"
+                                                className="article_text flex justify-center pb-4 text-cyan-200"
                                           >
                                                 {item.content}
                                           </h3>
                                     )
                               case "p":
-                                    return <p key={index}>{item.content}</p>;
+                                    return <p key={index} className="article_text">{item.content}</p>;
                               default:
                                     return null;
                         }

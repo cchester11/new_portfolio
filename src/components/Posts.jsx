@@ -6,7 +6,7 @@ function Posts() {
 
       return (
             <div className="flex flex-wrap p-20 gap-10 flex-col justify-center text-cyan-50">
-                  <h2>Posts</h2>
+                  <h2 className="flex justify-center border-b-1 border-b-cyan-50 pb-4">Posts</h2>
                   {posts.map((element) => (
                         <div key={element.id} className="p-4 border rounded-lg">
                               <button 

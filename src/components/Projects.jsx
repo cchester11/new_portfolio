@@ -3,7 +3,7 @@ import projects from "../data";
 function Projects() {
       return (
             <div className="flex flex-wrap p-20 gap-10 flex-col justify-center">
-                  <p className="flex justify-center text-2xl text-cyan-50 border-b-1 border-b-cyan-50 pb-4">Projects</p>
+                  <p className="flex justify-center text-cyan-50 border-b-1 border-b-cyan-50 pb-4">Projects</p>
                   {projects.map((element) => (
                         <div key={element.id} className="p-4 border rounded-lg">
                               <h2
