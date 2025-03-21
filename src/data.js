@@ -31,6 +31,10 @@ export const posts = [
       {
             id: "2",
             title: "building my usage monitor"
+      },
+      {
+            id: "3",
+            title: "Homebrew is not always the best answer"
       }
 ];
 
@@ -104,6 +108,39 @@ export const post_details = [
                   {
                         type: "p",
                         content: "In the end, this project helped me learn and grow as a developer. To top it off, I get to enjoy using my own application through out my work day."
+                  }
+            ]
+      },
+      {
+            id: "3",
+            content: [
+                  {
+                        type: "h2",
+                        content: "Homebrew is not always the best answer"
+                  },
+                  {
+                        type: "p",
+                        content: `I’ve used homebrew for a long time. It’s always managed development tools like Node and Git, my   database services like MongoDB, and even hosting service CLI’s for software like Railway and Heroku.
+                                    Recently, however, working on my Usage Monitor app, I was having issues. The issues stemmed from the integration of some important python files I needed to work but were failing. After some research and the good ole act of banging my head against the wall, I found that my Homebrew installation of python was actually what might be causing the problems for my app.`
+                  },
+                  {
+                        type: "p",
+                        content: `In an article by Daniel Kehoe, he wrote, "If you need to install Python for casual use case, it’s easy to install Python with Homebrew...Homebrew installed Python is adequate for running scripts. However, it has drawbacks and you may want to consider other options…".
+My interest was peaked. He later mentioned software like Rye which seemed to be perfect for my use case. After visiting Rye’s site, I was encouraged to try uv, the successor to Rye, and I found that uv was very easy to use and very powerful.`
+                  },
+                  {
+                        type: "h3",
+                        content: "Using uv"
+                  },
+                  {
+                        type: "p",
+                        content: `The documentation is very good. It feels, as you’re reading their documentation, that the developers have thought deeply about user experience. I am not a Python developer and only use it when I can’t find any javascript packages that meet a particular need, so it’s nice to use a service that makes setting up Python development and environments very easy. 
+Even creating a virtual environment for a project is as easy as writing the command ‘uv venv’ in your working directory. Furthermore, uv automatically installs necessary Python versions for you, leaving manual installation entirely optional. `
+                  },
+                  {
+                        type: "p",
+                        content: `Lastly, in Daniel Kehoe’s article, he states, “Rye is a newer tool that supports switching Python versions and provides better package management with virtual environments”. Obviously, I’m using uv, but uv has taken all the advantages of using Rye and created a more effective project.
+In conclusion, my problem I faced with integrating Python into my Electron.js app was solved in the end by using a service that makes Python integration into projects more seamless. I highly recommend using uv for your own use of Python.`
                   }
             ]
       }
